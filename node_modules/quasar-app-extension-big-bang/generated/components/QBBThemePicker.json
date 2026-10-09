@@ -1,0 +1,26 @@
+{
+  "type": "component",
+  "props": {},
+  "events": {},
+  "slots": {},
+  "methods": {
+    "setPrimary": {
+      "desc": "Set Primary color",
+      "params": {
+        "label": {
+          "type": "TPrimaryLabel",
+          "desc": "The primary label"
+        }
+      }
+    },
+    "setSurface": {
+      "desc": "Set Surface color",
+      "params": {
+        "label": {
+          "type": "TSurfaceLabel",
+          "desc": "The surface label"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "component",
+  "props": {
+    "name": {
+      "type": "String",
+      "desc": "Name of the label",
+      "category": "content",
+      "examples": [
+        "'Name'"
+      ]
+    }
+  },
+  "events": {},
+  "slots": {},
+  "methods": {}
+}
