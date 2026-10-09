@@ -3,9 +3,8 @@ import {
   groupIconVitePlugin,
 } from "vitepress-plugin-group-icons";
 import { fileURLToPath, URL } from "node:url";
-import type { DefaultTheme } from 'vitepress'
 
-export const vitepressBigBangConfig: DefaultTheme.Config = {
+export const vitepressBigBangConfig = {
   themeConfig: {
     docFooter: {
       prev: false,
