@@ -1,6 +1,6 @@
 {
   "name": "vitepress-bigbang",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vitepress BigBangTheme",
   "devDependencies": {
     "@quasar/extras": "^2.1.0",
@@ -20,10 +20,5 @@
   "type": "module",
   "author": "JulesDebeaumont <deb.jules@outlook.fr>",
   "license": "MIT",
-  "main": "./dist/index.js", 
-  "types": "./dist/index.d.ts", 
-  "files": [ "dist" ], 
-  "scripts": { 
-    "build": "tsc" 
-    }
+  "main": "./src/index.ts"
   }
