@@ -1,0 +1,221 @@
+@import 'quasar/dist/quasar.css';
+@import '@quasar/extras/material-icons/material-icons.css';
+@import 'quasar-app-extension-big-bang/src/css/big-bang-variables.scss';
+@import 'quasar-app-extension-big-bang/src/css/big-bang.sass';
+
+:root, body.body--dark {
+
+  --vp-sidebar-bg-color: var(--page-background);
+  --vp-nav-bg-color: var(--page-background);
+
+  --vp-c-brand-1: var(--primary-text-color);
+  --vp-c-brand-2: var(--secondary-text-color);
+  --vp-c-text-1: var(--text-color);
+  --vp-c-text-2: var(--secondary-text-color);
+  --vp-c-divider: transparent;
+  --vp-c-bg-soft: var(--card-background);
+  --vp-c-bg-alt: var(--field-background);
+  --vp-c-default-soft: var(--hover-background);
+
+  --docsearch-search-button-background: var(--card-background);
+
+  --vp-button-brand-text: var(--btn-text-color);
+  --vp-button-brand-bg: var(--primary-color);
+  --vp-button-brand-hover-text: var(--btn-text-color);
+  --vp-button-brand-hover-bg: var(--primary-hover-color);
+  --vp-button-alt-text: var(--secondary-text-color);
+  --vp-button-alt-bg: var(--secondary-color);
+  --vp-button-alt-hover-text: var(--secondary-text-color);
+  --vp-button-alt-hover-bg: var(--secondary-hover-color);
+
+  --vp-local-search-bg: var(--card-background);
+  --vp-local-search-result-border: var(--card-border-color);
+  --vp-local-search-result-selected-border: var(--primary-color);
+  --vp-local-search-highlight-bg: var(--primary-color);
+  --vp-local-search-highlight-text: var(--btn-text-color);
+  --vp-local-nav-bg-color: var(--page-background);
+
+  --vp-code-bg: var(--card-background);
+  --vp-code-color: var(--primary-color);
+  --vp-code-block-bg: var(--card-background);
+  --vp-code-copy-code-border-color: var(--field-border-color);
+  --vp-code-copy-code-bg: var(--field-background);
+  --vp-code-copy-code-hover-border-color: var(--field-border-color-hover);
+  --vp-code-copy-code-hover-bg: var(--field-background);
+  --vp-code-lang-color: var(--surface-500);
+  --vp-code-tab-bg: var(--card-background);
+  --vp-code-tab-text-color: var(--secondary-text-color);
+  --vp-code-tab-active-text-color: var(--secondary-text-color);
+
+  --vp-layout-max-width: 1570px;
+
+  --vp-sidebar-width: 280px;
+
+  --vp-nav-screen-bg-color: var(--page-background);
+
+  --vp-custom-block-warning-bg: var(--warning-background-alt-color);
+  --vp-custom-block-warning-text: var(--secondary-text-color);
+  --vp-custom-block-danger-bg: var(--negative-background-alt-color);
+  --vp-custom-block-danger-text: var(--secondary-text-color);
+  --vp-custom-block-tip-bg: var(--info-background-alt-color);
+  --vp-custom-block-tip-text: var(--secondary-text-color);
+  --vp-custom-block-info-bg: var(--info-background-alt-color);
+  --vp-custom-block-info-text: var(--secondary-text-color);
+
+  /* HOME PAGE */
+  .heading {
+    margin: 4px 0;
+  }
+  .tagline {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .actions {
+    padding-top: 50px;    
+  }
+  .VPButton.brand, .VPButton.alt {
+    border-radius: 7px;
+  }
+
+  /* PAGES */
+  .VPDoc {
+    padding-top: 0px;
+    &.has-aside .content-container {
+      max-width: 830px;
+    }
+  }
+  .vp-doc h1 {
+    font-size: 1.48rem;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 14px 0;
+  }
+  .vp-doc h2 {
+    font-size: 1.09rem;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-top: 30px;
+    .header-anchor {
+      top: 1.8rem;
+      font-size: 1.2rem;
+    }
+  }
+  .vp-doc h3 {
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 8px 0;
+  }
+  .vp-doc {
+    .tabs {
+      border: 1px solid var(--card-border-color);
+      border-bottom: 0px;
+    }
+    .vp-code-block-title-bar {
+      border: 1px solid var(--card-border-color);
+      border-bottom: 0px;
+    }
+    div[class*='language-'] {
+      border: 1px solid var(--card-border-color);
+      pre {
+        padding: 16px 0;
+        code {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+  .custom-block {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .custom-block-title {
+    display: none;
+  }
+  .aside-curtain {
+    background: var(--page-background);
+  }
+
+  /* LAYOUT */
+  .VPNavBarTitle {
+    .title {
+      font-size: 1.53rem;
+      border-bottom-color: transparent !important;
+    }
+  }
+  .VPNavBarSearchButton {
+    border: 1px solid var(--field-border-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--vp-c-bg-alt);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1;
+    color: var(--vp-c-text-2);
+    .text {
+      display: inline;
+      font-size: 0.8125rem;
+    }
+    .keys {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.375rem;
+      border: 1px solid var(--vp-c-divider);
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+    }
+    &:hover {
+      border-color: var(--field-border-color-hover)
+    }
+  }
+  .VPNavBarSearch {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .VPSidebar {
+    border-right: 1px solid var(--border-color);
+    padding-right: 0.8rem;
+  }
+  .content-body {
+    .VPNavBarSearch {
+      display: none;
+    }
+  }
+  .VPDocOutlineItem {
+    padding-left: 10px;
+    border-left: 1px solid var(--border-color);
+  }
+  .outline-marker {
+    transform: translateX(16px);
+    width: 1px;
+  }
+  .outline-link {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+      
+
+  /* MISC */
+  .box {
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+  }
+
+  /* Search */
+  #localsearch-list {
+    padding-right: 8px;
+  }
+}
+
