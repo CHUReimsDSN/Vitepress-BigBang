@@ -1,11 +1,10 @@
 import fs from "fs";
 import path from "path";
-import type { TSidebarEntry } from '../types'
 
 export function computeSidebar() {
-  const getSidebarEntry = (folderName: string): TSidebarEntry[] => {
+  const getSidebarEntry = (folderName: string) => {
     const folderAbsPath = path.resolve(process.cwd(), folderName);
-    const entries: TSidebarEntry[] = [];
+    const entries = [];
     if (!fs.existsSync(folderAbsPath)) {
       console.warn(`⚠️ Dossier non trouvé: ${folderAbsPath}`);
       return entries;
@@ -27,10 +26,10 @@ export function computeSidebar() {
           path.posix.join(
             path.relative(process.cwd(), filePath).replace(/\\/g, "/"),
           );
-        const item: TSidebarEntry = { text: title, icon, link: link, active: false, collapsed: false };
+        const item = { text: title, icon, link: link, active: false, collapsed: false };
         entries.push(item);
       } else {
-        const item: TSidebarEntry = { text: "???", items: [], active: false, collapsed: false };
+        const item = { text: "???", items: [], icon: undefined, active: false, collapsed: false };
         const filePath = path.join(folderAbsPath, dirEntry);
         const indexFilePath = path.join(folderAbsPath, dirEntry, "root.md");
         if (fs.existsSync(indexFilePath)) {
