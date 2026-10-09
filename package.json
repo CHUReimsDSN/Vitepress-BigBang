@@ -1,4 +1,7 @@
 {
+  "name": "vitepress-bigbang",
+  "version": "0.0.2",
+  "description": "Vitepress BigBangTheme",
   "devDependencies": {
     "@quasar/extras": "^2.1.0",
     "@types/node": "^26.6.4",
@@ -14,5 +17,7 @@
   "peerDependencies": {
     "vitepress": "^2.0.0-alpha.20"
   },
-  "type": "module"
+  "type": "module",
+  "author": "Jules Debeaumont",
+  "license": "MIT"
 }
