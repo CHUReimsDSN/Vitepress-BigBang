@@ -18,6 +18,7 @@
     "vitepress": "^2.0.0-alpha.20"
   },
   "type": "module",
-  "author": "Jules Debeaumont",
-  "license": "MIT"
+  "author": "JulesDebeaumont <deb.jules@outlook.fr>",
+  "license": "MIT",
+  "main": "src/index.ts"
 }
