@@ -26,7 +26,7 @@
     },
     "./scripts": {
       "types": "./src-scripts/index.ts",
-      "import": "./dist/scripts.js"
+      "import": "./dist/scripts/index.js"
     }
   },
   "files": [
@@ -34,6 +34,6 @@
     "src"
   ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build && tsc -p tsconfig.scripts.json"
   }
 }

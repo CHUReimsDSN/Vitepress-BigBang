@@ -1,9 +1,8 @@
 import fs from "fs";
 import path from "path";
-import type { TSidebarEntry } from "../src/types";
 
 export function computeSidebar() {
-  const getSidebarEntry = (folderName: string): TSidebarEntry[] => {
+  const getSidebarEntry = (folderName: string) => {
     const folderAbsPath = path.resolve(process.cwd(), folderName);
     const entries = [];
     if (!fs.existsSync(folderAbsPath)) {
