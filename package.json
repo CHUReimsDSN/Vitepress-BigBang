@@ -1,6 +1,6 @@
 {
   "name": "vitepress-bigbang",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "Vitepress BigBangTheme",
   "devDependencies": {
     "@quasar/extras": "^2.1.0",
@@ -9,31 +9,16 @@
     "quasar": "^2.34.0",
     "quasar-app-extension-big-bang": "^0.0.11",
     "ts-morph": "^27.0.2",
-    "tsx": "^4.23.15",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "vitepress-plugin-mermaid": "^2.0.17",
-    "vitepress-plugin-group-icons": "^1.7.6",
+    "vitepress-plugin-group-icons": "^1.7.6"
+  },
+  "peerDependencies": {
     "vitepress": "^2.0.0-alpha.20"
   },
   "type": "module",
   "author": "JulesDebeaumont <deb.jules@outlook.fr>",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "exports": {
-    ".": {
-      "types": "./src/index.ts",
-      "import": "./dist/index.js"
-    },
-    "./scripts": {
-      "types": "./src-scripts/index.ts",
-      "import": "./dist/scripts/index.js"
-    }
-  },
-  "files": [
-    "dist",
-    "src"
-  ],
-  "scripts": {
-    "build": "vite build && tsc -p tsconfig.scripts.json"
+  "main": "./src/index.ts"
   }
-}

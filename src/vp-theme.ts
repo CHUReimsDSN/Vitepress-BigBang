@@ -5,8 +5,6 @@ import {
   type TPrimaryLabel,
   type TSurfaceLabel,
 } from "quasar-app-extension-big-bang";
-import "virtual:group-icons.css";
-import "./style.scss";
 
 export function setupVitepressBigBangTheme(
   app: App,
