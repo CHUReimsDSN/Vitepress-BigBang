@@ -24,7 +24,7 @@ function getVersionPackageJson(fileToReadPath?: string) {
 }
 
 function getVersionRuby(fileToReadPath?: string) {
-  const versionFilePath = fileToReadPath ?? "../lib/submit64/version.rb";
+  const versionFilePath = fileToReadPath ?? "version.rb";
   const fileAbsPath = path.resolve(process.cwd(), versionFilePath);
   const content = fs.readFileSync(fileAbsPath, "utf-8");
   const match = content.match(/VERSION\s*=\s*["'](\d+\.\d+\.\d+)["']/);
